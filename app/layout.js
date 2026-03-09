@@ -3,6 +3,7 @@ import { Cairo, Almarai } from "next/font/google";
 import "@/app/_styles/globals.css";
 import Footer from "./_components/Footer";
 import WhatsAppButton from "./_components/WhatsAppButton";
+import ScrollToTop from "./_components/ScrollToTop";
 
 const cairo = Cairo({ subsets: ["arabic"], variable: "--font-cairo" });
 const almarai = Almarai({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <WhatsAppButton />
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
